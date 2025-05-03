@@ -1,0 +1,12 @@
+﻿{
+  "Id": "ModTagEx",
+  "DisplayName": "ModTagEx",
+  "Author": "AlterAsc",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.27.11",
+  "Requirements": [],
+  "AssemblyName": "ModTagEx.dll",
+  "EntryMethod": "ModTagEx.Main.Load",
+  "HomePage": "https://github.com/alterasc/ModTagEx",
+  "Repository": "https://raw.githubusercontent.com/alterasc/ModTagEx/main/Repository.json"
+}
