@@ -5,6 +5,7 @@ using System.Net;
 using UnityModManagerNet;
 
 namespace ModTagEx;
+
 internal static class Updater
 {
     // link to content database blueprint file
@@ -23,7 +24,7 @@ internal static class Updater
         long timeNow = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
 
         // once per day check
-        if (Main.Settings.LastUpdateTS > 0 && Main.Settings.LastUpdateTS - timeNow < 24 * 60 * 60)
+        if (Main.Settings.LastUpdateTS > 0 && timeNow - Main.Settings.LastUpdateTS < 24 * 60 * 60)
         {
             logger.Log($"Skipping update check. Last check:{Main.Settings.LastUpdateTS}, now {timeNow}");
             return;
